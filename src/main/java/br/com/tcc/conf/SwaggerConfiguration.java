@@ -31,7 +31,7 @@ public class SwaggerConfiguration implements WebMvcConfigurer {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(new ApiInfo("TCC Spark Stock", "Microsserviço ", "1.0", "urn:tos",
                         new Contact("TCC","","exemplo@exemplo.com"), "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0", new ArrayList<VendorExtension>()))
-                .tags(new Tag("Sales", "Services for manage accounts"))
+                .tags(new Tag("Sales", "Serviços de mineração dos dados de venda com uso de Spark"))
                 .consumes(Set.of(MediaType.APPLICATION_JSON_VALUE))
                 .produces(Set.of(MediaType.APPLICATION_JSON_VALUE))
                 //.ignoredParameterTypes(Pageable.class)
